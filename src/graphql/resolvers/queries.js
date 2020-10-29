@@ -321,10 +321,20 @@ export const UserLikesData = async (_, input) => {
         // We search for the user by ID and extract only the list of likes
         const Books = await Likes.findOne({ _id_user: _id }, { books: 1 });
 
+        // If the list books is empty we return the following message
+        if (!Books) {
+            return {
+                status: true,
+                message: 'No likes added',
+                typeMessage: 'success',
+                likes: [],
+            };
+        }
+
         // We return the following message if everything worked correctly
         return {
             status: true,
-            message: 'Valid token',
+            message: 'Likes found',
             typeMessage: 'success',
             likes: Books.books,
         };

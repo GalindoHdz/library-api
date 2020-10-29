@@ -1,6 +1,7 @@
 # Library Toth API
 
 This container is an example of using graphql with nodejs, it is alse used the google-books api is used.
+[Demo](https://api-toth.herokuapp.com/graphql)
 
 ## Getting Started
 
@@ -65,4 +66,4 @@ luis3120/library-api
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/GalindoHdz/library-api) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/GalindoHdz/library-api/blob/main/LICENSE) file for details.

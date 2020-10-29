@@ -9,7 +9,8 @@
 	  </a>
     <br />
     <br />
-    <a href="https://api-toth.herokuapp.com/">View Demo</a>
+    <a href="https://api-toth.herokuapp.com/graphql">View Demo</a>
+    <a href="https://hub.docker.com/repository/docker/luis3120/library-api">Docker Hub</a>
   </div>
 </div>
 
