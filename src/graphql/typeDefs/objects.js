@@ -57,7 +57,6 @@ const Search = `
         status: Boolean
         message: String
         typeMessage: String
-        found: Int
         Books: [Book]
     }
 `;

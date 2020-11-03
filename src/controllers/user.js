@@ -98,11 +98,11 @@ export const UserUpdatePhoto = async (req, res) => {
 
         // If the generated route is different from the one stored in the database or the auxiliary photo, then we delete the photo from the server
         if (user.photo !== path && user.photo !== 'profile.png') {
-            fs.unlinkSync(`./src/photos/${user.photo}`);
+            fs.unlinkSync(`./dist/photos/${user.photo}`);
         }
 
         // We save the new photo on the server
-        photo.mv(`./src/photos/${_id}.${photo.mimetype.substring(6)}`);
+        photo.mv(`./dist/photos/${_id}.${photo.mimetype.substring(6)}`);
 
         // We update the path of the photo in the database
         await User.updateOne(

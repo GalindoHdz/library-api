@@ -34,7 +34,7 @@ const BookSearch = `
 
 // Query to search for books by subject
 const BookForSubjects = `
-    BookForSubjects(subject: EnumSubjects!): Search
+    BookForSubjects(subject: String!): Search
 `;
 
 // Query to get the user's books

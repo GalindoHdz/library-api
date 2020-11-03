@@ -95,7 +95,7 @@ export const UserVerify = async (_, input) => {
         // We return the following message if everything works correctly
         return {
             status: true,
-            message: 'Invalid token',
+            message: 'Valid token',
             typeMessage: 'success',
         };
     } catch (error) {
@@ -164,9 +164,6 @@ export const BookSearch = async (_, { word }) => {
             `https://www.googleapis.com/books/v1/volumes?q=${word}&key=${process.env.LIBRARY_KEY}&maxResults=40`
         );
 
-        // We extract the number of books found
-        const found = response.data.totalItems;
-
         // We extract the data from the books
         const data = response.data.items;
 
@@ -194,7 +191,6 @@ export const BookSearch = async (_, { word }) => {
             status: true,
             message: 'Found books',
             typeMessage: 'success',
-            found,
             Books,
         };
     } catch (error) {
@@ -255,9 +251,6 @@ const SearchSubject = async (word) => {
             `https://www.googleapis.com/books/v1/volumes?q=subject:${word}&key=${process.env.LIBRARY_KEY}&maxResults=40`
         );
 
-        // We extract the number of books found
-        const found = response.data.totalItems;
-
         // We extract the data from the books
         const data = response.data.items;
 
@@ -285,7 +278,6 @@ const SearchSubject = async (word) => {
             status: true,
             message: 'Found books',
             typeMessage: 'success',
-            found,
             Books,
         };
     } catch (error) {
@@ -294,8 +286,6 @@ const SearchSubject = async (word) => {
             status: false,
             message: 'Server error',
             typeMessage: 'danger',
-            found,
-            Books,
         };
     }
 };

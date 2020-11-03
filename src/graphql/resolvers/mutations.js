@@ -356,12 +356,12 @@ export const UserLikeBook = async (_, input) => {
         // We return the following message if everything worked correctly
         return {
             status: true,
-            message: 'Libro guardado',
+            message: 'Save book',
             typeMessage: 'success',
             likes: UserLikes.books,
         };
     } catch (error) {
-        // We get the error message
+        // We get the error message or error code
         const message = error.errors.books.properties.message;
 
         // If the error is due to a duplicate in the list of likes, we return the following message
