@@ -18,13 +18,13 @@
 
 ## Table of contents
 
--   [About the project](#about-the-project)
-    -   [Built With](#built-with)
--   [Getting Started](#getting-started)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation](#installation)
--   [License](#license)
--   [Contact](#contact)
+- [About the project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -34,12 +34,12 @@ This project is an example of using graphql with nodejs, the google-books api is
 
 ### Built With
 
--   [NodeJS](https://nodejs.org/en/)
--   [GraphQL](https://www.graphql.com/)
--   [Google Books API](https://developers.google.com/books)
--   [Moongose](https://mongoosejs.com/)
--   [Axios](https://github.com/axios/axios)
--   [Nodemailer](https://nodemailer.com/about/)
+- [NodeJS](https://nodejs.org/en/)
+- [GraphQL](https://www.graphql.com/)
+- [Google Books API](https://developers.google.com/books)
+- [Moongose](https://mongoosejs.com/)
+- [Axios](https://github.com/axios/axios)
+- [Nodemailer](https://nodemailer.com/about/)
 
 <!-- GETTING STARTED -->
 
@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 
--   npm
+- npm
 
 ```sh
 npm install npm@latest -g
@@ -103,8 +103,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
--   [twitter](https://twitter.com/GalindoHdzEngin)
--   [instagram](https://www.instagram.com/galindo_hdz_engin/)
--   [web]()
+- [twitter](https://twitter.com/GalindoHdzEngin)
+- [instagram](https://www.instagram.com/galindo_hdz_engin/)
+- [web]()
 
 Project Link: [https://github.com/GalindoHdz/library-api](https://github.com/GalindoHdz/library-api)

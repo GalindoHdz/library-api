@@ -5,12 +5,12 @@ import { resolvers } from './resolvers';
 
 // GraphQL configuration
 export default new ApolloServer({
-    typeDefs,
-    resolvers,
-    playgound: {
-        endpointURL: '/API',
-        settings: {
-            'editor.theme': 'dark',
-        },
+  typeDefs,
+  resolvers,
+  playgound: {
+    endpointURL: '/API',
+    settings: {
+      'editor.theme': 'dark',
     },
+  },
 });

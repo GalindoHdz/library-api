@@ -2,22 +2,22 @@
 version: '2'
 
 services:
-    gitlab:
-        image: luis3120/library-api:latest
-        container_name: library-api
-        restart: always
-        ports:
-            - 4000:4000
-        volumes:
-            - library_data:/api/dist/photos
-        environment:
-            DB_URL:
-            TOKEN_SECRET:
-            TOKEN_EXPIRES:
-            EMAIL_ACCOUNT:
-            EMAIL_PASSWORD:
-            LIBRARY_KEY:
+  gitlab:
+    image: luis3120/library-api:latest
+    container_name: library-api
+    restart: always
+    ports:
+      - 4000:4000
+    volumes:
+      - library_data:/api/dist/photos
+    environment:
+      DB_URL:
+      TOKEN_SECRET:
+      TOKEN_EXPIRES:
+      EMAIL_ACCOUNT:
+      EMAIL_PASSWORD:
+      LIBRARY_KEY:
 
 volumes:
-    library_data:
-        driver: local
+  library_data:
+    driver: local
